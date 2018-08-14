@@ -1,0 +1,12 @@
+language: node_js
+sudo: required
+before_install:
+  - chmod +x /home/son/preprod/deploy.sh
+node_js:
+  - 8.11.1
+cache:
+  directories:
+    - node_modules
+script:
+    - ./deploy.sh
+branch: master
