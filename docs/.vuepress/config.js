@@ -23,7 +23,6 @@ module.exports = {
 				title: 'JavaScript', // 侧边栏名称
 				collapsable: true, // 可折叠
 				children: [
-					'/blog/JavaScript/',
 					'/blog/JavaScript/单例模式、工厂模式、构造函数原型链模式', // 你的md文件地址
 				],
 			},
@@ -40,7 +39,10 @@ module.exports = {
 			{
 				title: 'Essays',
 				collapsable: true,
-				children: ['/blog/Essays/', '/blog/Essays/逃出肖申克'],
+				children: [
+					'/blog/Essays/', 
+					'/blog/Essays/逃出肖申克'
+				],
 			},
 		],
 		repo: 'https://github.com/nothoutonly/nothoutonly.github.io/',
