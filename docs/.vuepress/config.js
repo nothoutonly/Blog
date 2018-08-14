@@ -12,10 +12,11 @@ module.exports = {
 				items: [
 					{ text: 'JavaScript', link: '/blog/JavaScript/' },
 					{ text: 'CSS', link: '/blog/CSS/' },
-					{ text: 'HTTP', link: '/blog/HTTP/' }
+					{ text: 'HTTP', link: '/blog/HTTP/' },
+					{ text: 'Essays', link: '/blog/Essays/' },
 				],
 			},
-			{ text: 'Essays', link: '/Essays/' },
+
 			{ text: 'Resume', link: '/Resume/' },
 		],
 		sidebar: [
@@ -23,24 +24,27 @@ module.exports = {
 				title: 'JavaScript', // 侧边栏名称
 				collapsable: true, // 可折叠
 				children: [
-					'/blog/JavaScript/',
+					'/blog/JavaScript',
 					'/blog/JavaScript/单例模式、工厂模式、构造函数原型链模式', // 你的md文件地址
 				],
 			},
 			{
 				title: 'CSS',
 				collapsable: true,
-				children: ['blog/CSS/'],
+				children: ['/blog/CSS/CSS-modules'],
 			},
 			{
 				title: 'HTTP',
 				collapsable: true,
-				children: ['blog/HTTP/'],
+				children: ['/blog/HTTP/about-URL'],
 			},
 			{
 				title: 'Essays',
 				collapsable: true,
-				children: ['/Essays/', '/Essays/逃出肖申克'],
+				children: [
+					'/blog/Essays/', 
+					'/blog/Essays/逃出肖申克'
+				],
 			},
 		],
 		repo: 'https://github.com/nothoutonly/nothoutonly.github.io/',
